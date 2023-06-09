@@ -10,9 +10,9 @@ void main() => runApp(MaterialApp(
           title: const Text('Jai Shree Ram',
             style:TextStyle(fontFamily:'Pacifico',fontSize: 80,),),
           backgroundColor: Colors.cyan,
-
-        ), // AppBar
-
+        ),
+        body: const Image(
+          image: NetworkImage('https://t3.ftcdn.net/jpg/02/72/37/32/240_F_272373287_sYNBqiWhcffOuLuhbwxLgPHNxcY2ePcN.jpg'),), // Network Image
 
         floatingActionButton: FloatingActionButton(
           onPressed:() =>{
