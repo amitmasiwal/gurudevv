@@ -8,7 +8,7 @@ void main() => runApp(MaterialApp(
     home: Scaffold(
         appBar: AppBar(
           title: const Text('Jai Shree Ram',
-            style:TextStyle(fontFamily:'Pacifico',fontSize: 60,),),
+            style:TextStyle(fontFamily:'Pacifico',fontSize: 80,),),
           backgroundColor: Colors.cyan,
 
         ), // AppBar
@@ -19,7 +19,7 @@ void main() => runApp(MaterialApp(
             print('You clicked me'),
           },
           tooltip:'Click button',
-          backgroundColor: Colors.cyan.shade900,
+          backgroundColor: Colors.cyan.shade800,
           child: const Text ('click'),
         ), // FloatingActionButton
         bottomNavigationBar: const BottomAppBar(
