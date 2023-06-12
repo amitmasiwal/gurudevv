@@ -1,22 +1,26 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 
-void main() => runApp(MaterialApp(
-title: 'My Flutter App', debugShowCheckedModeBanner: false,home: Home())); // MaterialApp
+void main() => runApp(const MaterialApp(
+    title: 'My Flutter App', debugShowCheckedModeBanner: false,home: Home())); // MaterialApp
 
 class Home extends StatefulWidget{
+  const Home({super.key});
+
   @override
-  _HomeState createState() => _HomeState();
+  HomeState createState() => HomeState();
 }
 
-class _HomeState extends State<Home> {
+class HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-            'JAI SHREE RAM'
-            style: TextStyle(fontFamily: 'Pacifico', fontSize: 30),
-      ), // Text
+        title: const Text(
+            'JAI SHREE RAM',
+             style : TextStyle(fontFamily: 'Pacifico', fontSize: 30),
+  ), // Text
       backgroundColor: Colors.pink[600],
     ), // AppBar
     body: Image.asset(
@@ -25,15 +29,17 @@ class _HomeState extends State<Home> {
     fit: BoxFit.cover,
     ), // Image.asset
     floatingActionButton: FloatingActionButton(
-    child: Text('click')
     onPressed: () => {
     print('You clicked me'),
     },
     tooltip: 'click butoon',
     backgroundColor: Colors.pink[600],
+    child: const Text('click')
+
     ), // FloatingActionButton
     bottomNavigationBar: BottomAppBar(
-    child: Container(
+    color: Colors.pink[600],
+    child: const SizedBox(
     height: 40,
     child: Center(
     child: Text(
@@ -42,58 +48,35 @@ class _HomeState extends State<Home> {
     color: Colors.white, fontFamily: 'Pacifico', fontSize: 20), // Textstyle
     ), // Text
     ), // Center
-    ), // container
-    color: Colors.pink[600],
+    ),
     ),
     );
   }
 }
 class MySTLHome extends StatelessWidget {
+  const MySTLHome({super.key});
 
-@override
-Widget build(BuildContext context) {
-  return Container();
-}
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
 }
 class MyHome extends StatefulWidget {
+  const MyHome({super.key});
+
   @override
-  _HomeState createState() => _HomeState();
+  HomeState createState() => HomeState();
 }
-class _MyHomeState extends State<MyHome> {
+class MyHomeState extends State<MyHome> {
   int counter =0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    appBar: AppBar(
-    title: Text(
-    'Jai Shree Ram',
-    style: TextStyle(fontFamily: 'Pacifico', fontsize:30),
-    ), // Text
-    backgroundColor: Colors.pink[600],
-    ), //AppBar
-    body: Center(
-    child: Text('click'),
-      onPressed: () =>{
-      setState()) {
-    counter += 1;
-    })
-  },
-      tooltip:'Click button'
-    backgroungColor: Colors.pink[600],
-    ), // FloatingActionButton
-    buttonNavigationBar: BottomAppBar(
-    child: Container(
-    height: 40,
-    child: Center(
-    child: Text(
-    'Har Har Mahadev',
-    style: TextStyle(
-    Color: Colors.white, fontFamily: 'Pacifico', fontSize: 20),
-    ),
-    ),
-    ),
-    color: Colors.pink[600],
-    ),
-    );
-  }
-}
+        appBar: AppBar(
+          title: const Text(
+            'Jai Shree Ram',
+            style: TextStyle(fontFamily: 'Pacifico'),
+          ), // Text
+          backgroundColor: Colors.pink[600],
+        ));}}
