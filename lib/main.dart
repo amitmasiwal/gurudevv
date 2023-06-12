@@ -21,7 +21,7 @@ class HomeState extends State<Home> {
             'JAI SHREE RAM',
              style : TextStyle(fontFamily: 'Pacifico', fontSize: 30),
   ), // Text
-      backgroundColor: Colors.pink[600],
+      backgroundColor: Colors.cyan[600],
     ), // AppBar
     body: Image.asset(
     'assets/images/4.jpg',
@@ -33,12 +33,12 @@ class HomeState extends State<Home> {
     print('You clicked me'),
     },
     tooltip: 'click butoon',
-    backgroundColor: Colors.pink[600],
+    backgroundColor: Colors.cyan[600],
     child: const Text('click')
 
     ), // FloatingActionButton
     bottomNavigationBar: BottomAppBar(
-    color: Colors.pink[600],
+    color: Colors.cyan[600],
     child: const SizedBox(
     height: 40,
     child: Center(
@@ -78,5 +78,5 @@ class MyHomeState extends State<MyHome> {
             'Jai Shree Ram',
             style: TextStyle(fontFamily: 'Pacifico'),
           ), // Text
-          backgroundColor: Colors.pink[600],
+          backgroundColor: Colors.cyan[600],
         ));}}
