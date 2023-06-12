@@ -7,7 +7,7 @@ void main() => runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     home: Scaffold(
         appBar: AppBar(
-          title: const Text('Jai Shree Ram',
+          title: const Text('Jai Shree Ram 2',
             style:TextStyle(fontFamily:'Pacifico',fontSize: 80,),),
           backgroundColor: Colors.cyan,
         ),
