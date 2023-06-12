@@ -24,7 +24,7 @@ class HomeState extends State<Home> {
       backgroundColor: Colors.cyan[600],
     ), // AppBar
     body: Image.asset(
-    'assets/images/4.jpg',
+    'assets/images/1.jpg',
     height: 600,
     fit: BoxFit.cover,
     ), // Image.asset
